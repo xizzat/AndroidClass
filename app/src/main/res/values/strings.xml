@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Benz Dealer Locator</string>
+    <string name="example_edittext">Enter your user id and password</string>
+    <string name="show_the_text">Login</string>
+    <string name="enter_username"></string>
+    <string name="enter_password"></string>
+    <string name="show_error_invalid_password"></string>
+    <string name="show_error_invalid_username"></string>
+    <string name="welcome_text">Welcome to Android Application Development</string>
+    <string name="start_android_text">Start Android Tutorial</string>
+    <string name="feature_list">Options</string>
+    <string name="about">
+        Benz Dealer Locator is an application developed for Mercedes-Benz Dealers and Customers.
+        This mobile app will be used as a platform to search and manage dealer information.
+        Features are enabled depending on user category either the user is a Dealer or a Customer.
+        Dealer users will be given full access to all features and for security reason dealer user is required to create an account.
+    </string>
+    <string name="about_title">About Benz Dealer Locator</string>
+    <string name="get_support_title">Support</string>
+    <string name="locate_dealer_title">Search Dealer Information</string>
+    <string name="my_account_title">Personalize Account</string>
+    <string name="user_manual_title">User Manual</string>
+    <string name="radio_customer_user">Customer</string>
+    <string name="radio_dealer_user">Dealer</string>
+    <string name="country_prompt">Choose a country</string>
+    <string-array name="country_arrays">
+        <item>Malaysia</item>
+        <item>United States</item>
+        <item>Indonesia</item>
+        <item>France</item>
+        <item>Italy</item>
+        <item>Singapore</item>
+        <item>New Zealand</item>
+        <item>India</item>
+    </string-array>
+</resources>

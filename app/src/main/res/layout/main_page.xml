@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.myapplication.MainPage"
+    android:background="@drawable/mb1">
+
+    <Button
+        android:id="@+id/start_customer_btn"
+        style="@android:style/Widget.Material.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp"
+        android:text="I'm a customer"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Small"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/start_dealer_btn"
+        style="@android:style/Widget.Material.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="21dp"
+        android:layout_marginRight="21dp"
+        android:text="I'm a dealer user"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Small"
+        android:visibility="visible"
+        android:layout_alignBaseline="@+id/start_customer_btn"
+        android:layout_alignBottom="@+id/start_customer_btn"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>

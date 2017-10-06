@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@android:id/text1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dark2"
+    android:textAppearance="?android:attr/textAppearanceSmall">
+
+    <TextView
+        android:id="@+id/my_account_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="67dp"
+        android:text="@string/my_account_title"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <TextView
+        android:id="@+id/username_label"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Username:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Menu"
+        android:layout_alignBaseline="@+id/username_edit_text"
+        android:layout_alignBottom="@+id/username_edit_text"
+        android:layout_toLeftOf="@+id/username_edit_text"
+        android:layout_toStartOf="@+id/username_edit_text"
+        android:layout_marginRight="17dp"
+        android:layout_marginEnd="17dp" />
+
+    <EditText
+        android:id="@+id/username_edit_text"
+        style="@android:style/Widget.Material.Light.EditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/my_account_title"
+        android:layout_marginEnd="22dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/edit_text_background"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="username"
+        android:textAppearance="@style/TextAppearance.AppCompat.Menu" />
+
+    <EditText
+        android:id="@+id/firstname_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password_edit_text"
+        android:layout_marginTop="24dp"
+        android:layout_toEndOf="@+id/password_label"
+        android:layout_toRightOf="@+id/password_label"
+        android:background="@drawable/edit_text_background"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="firstname"
+        android:textAppearance="@style/TextAppearance.AppCompat.Menu" />
+
+
+    <EditText
+        android:id="@+id/lastname_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/firstname_edit_text"
+        android:layout_alignStart="@+id/firstname_edit_text"
+        android:layout_below="@+id/firstname_edit_text"
+        android:layout_marginTop="23dp"
+        android:background="@drawable/edit_text_background"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="lastname"
+        android:textAppearance="@style/TextAppearance.AppCompat.Menu" />
+
+
+    <EditText
+        android:id="@+id/password_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username_edit_text"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/username_label"
+        android:layout_toRightOf="@+id/username_label"
+        android:background="@drawable/edit_text_background"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:text="password"
+        android:textAppearance="@style/TextAppearance.AppCompat.Menu" />
+
+    <TextView
+        android:id="@+id/password_label"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Password:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Menu"
+        android:layout_alignBaseline="@+id/password_edit_text"
+        android:layout_alignBottom="@+id/password_edit_text"
+        android:layout_alignLeft="@+id/username_label"
+        android:layout_alignStart="@+id/username_label"
+        android:layout_toLeftOf="@+id/password_edit_text"
+        android:layout_toStartOf="@+id/password_edit_text" />
+
+    <TextView
+        android:id="@+id/lastname_label"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/lastname_edit_text"
+        android:layout_alignBottom="@+id/lastname_edit_text"
+        android:layout_alignLeft="@+id/username_label"
+        android:layout_alignStart="@+id/username_label"
+        android:text="Last Name:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Menu"
+        android:layout_toLeftOf="@+id/lastname_edit_text"
+        android:layout_toStartOf="@+id/lastname_edit_text" />
+
+    <TextView
+        android:id="@+id/firstname_label"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="First Name:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Menu"
+        android:layout_alignBaseline="@+id/firstname_edit_text"
+        android:layout_alignBottom="@+id/firstname_edit_text"
+        android:layout_alignLeft="@+id/lastname_label"
+        android:layout_alignStart="@+id/lastname_label"
+        android:layout_toLeftOf="@+id/firstname_edit_text"
+        android:layout_toStartOf="@+id/firstname_edit_text" />
+
+    <Button
+        android:id="@+id/delete_button"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+        android:layout_alignBaseline="@+id/update_button"
+        android:layout_alignBottom="@+id/update_button"
+        android:layout_alignRight="@+id/my_account_title"
+        android:layout_alignEnd="@+id/my_account_title" />
+
+    <Button
+        android:id="@+id/update_button"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/my_account_title"
+        android:layout_alignStart="@+id/my_account_title"
+        android:layout_marginBottom="81dp" />
+
+</RelativeLayout>
